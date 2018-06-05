@@ -19,9 +19,11 @@ namespace Serialize_Task
             bwork.SaveToBinary(AppDomain.CurrentDomain.BaseDirectory + "a.bin");
             Console.WriteLine("\nReading from Binary\n");
             bwork.ReadFromBinary(AppDomain.CurrentDomain.BaseDirectory + "a.bin");
+
             bwork.SaveToJSON_DataContract(AppDomain.CurrentDomain.BaseDirectory + "a.json");
             Console.WriteLine("\nReading from JSON\n");
             bwork.ReadFromJSON_DataContract(AppDomain.CurrentDomain.BaseDirectory + "a.json");
+
             bwork.SaveToXML(AppDomain.CurrentDomain.BaseDirectory + "a.xml");
             Console.WriteLine("\nReading from XML\n");
             bwork.ReadFromXML(AppDomain.CurrentDomain.BaseDirectory + "a.xml");
